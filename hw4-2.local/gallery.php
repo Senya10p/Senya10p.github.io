@@ -29,6 +29,6 @@
         echo $_FILES['myimage']['name'];
         ?>
         <br><br>
-        <a href="index.php">Перейти в форму для загрузки изображений</a>
+        <a href="/index.php">Перейти в форму для загрузки изображений</a>
 	</body>
 </html>

@@ -23,7 +23,7 @@
 
         </form>
         <br><br>
-        <a href="gallery.php">Перейти в фотогалерею</a>
+        <a href="/gallery.php">Перейти в фотогалерею</a>
 
     </body>
 </html>
