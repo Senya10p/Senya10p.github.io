@@ -23,11 +23,13 @@
        //2. 1). Выводим в браузер изображения из папки images
         foreach ($list as $img) {
             ?>
-            <img src="/images/<?php echo $img; ?>" height="30%">
+            <img src="/hw4-2.local/images/<?php echo $img; ?>" height="30%">
             <?php
         }
         ?>
         <br><br>
-        <a href="/index.php">Перейти в форму для загрузки изображений</a>
+        <a href="/hw4-2.local/index.php">Перейти в форму для загрузки изображений</a>
+        <br><br>
+        <a href="/../index.php">Перейти на главную страницу</a>
 	</body>
 </html>

@@ -3,8 +3,8 @@
 
 //2). Функция, которая читает файл и возвращает массив записей гостевой книги. Где строки записей являются элементами массива (если файла нет, выводит сообщение: Файл не существует).
 function arrGB() {
-    if (is_readable( __DIR__ . '/guestbook1.txt') == true) {
-        return file( __DIR__ . '/guestbook1.txt');
+    if (is_readable( __DIR__ . '/guestbook1.txt') ) {
+        return file( __DIR__ . '/guestbook1.txt', FILE_IGNORE_NEW_LINES);
     } else {
         echo 'Файла не существует';
     }

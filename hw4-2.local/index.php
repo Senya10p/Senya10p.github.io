@@ -16,14 +16,16 @@
         <h4>Фотогалерея</h4>
         <p>Загрузка изображений в формате JPEG, JPG, PNG</p>
         <!--2. 2). Форма загрузки нового изображения в папку images-->
-        <form action="/upload.php" method="post" enctype="multipart/form-data">
+        <form action="/hw4-2.local/upload.php" method="post" enctype="multipart/form-data">
 
             <input type="file" name="myimage">
             <button type="submit">Добавить</button>
 
         </form>
         <br><br>
-        <a href="/gallery.php">Перейти в фотогалерею</a>
+        <a href="/hw4-2.local/gallery.php">Перейти в фотогалерею</a>
+        <br><br>
+        <a href="/../index.php">Перейти на главную страницу</a>
 
     </body>
 </html>
