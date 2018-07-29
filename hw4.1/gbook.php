@@ -18,20 +18,20 @@
         </h5>
         <h4>Гостевая книга</h4>
         <?php
-        include __DIR__ . '/func.php';            // Подключаем файл с функцией
-        $lines = arrGB();                       //3). Отображение гостевой книги с использованием функции из пункта 2.
+        include (__DIR__ . '/func.php');            // Подключаем файл с функцией
+        if ( null !== arrGB() ) {
+            $lines = arrGB();                       //3). Отображение гостевой книги с использованием функции из пункта 2.
             foreach ($lines as $line) {
-            echo $line;?><br>
-        <?php
+                echo $line; ?><br>
+                <?php
+            }
         }
         ?>
         <br>
         <h4>Добавление записей в гостевую книгу</h4>
-        <form action="/hw4.1/addbook.php" method="post">                                          <!--4). Форма для добавления новой записи в гостевую книгу-->
+        <form action="/addbook.php" method="post">                                          <!--4). Форма для добавления новой записи в гостевую книгу-->
             Сообщение: <br><textarea cols="60" rows="10" name="msg"></textarea><br><br>
             <input type="submit" name="submit" value="Добавить">
         </form>
-        <br><br>
-        <a href="/../index.php">Перейти на главную страницу</a>
 	</body>
 </html>
